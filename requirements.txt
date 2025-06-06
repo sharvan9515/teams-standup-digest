@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+gspread_asyncio
+google-auth
+apscheduler
+python-dotenv
+python-multipart
+httpx
