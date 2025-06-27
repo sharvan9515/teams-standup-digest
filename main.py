@@ -1,13 +1,13 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from bot.bot import teams_bot_router
 from digest.weekly_summary import schedule_weekly_digest
 from dashboard.routes import dashboard_router
 from auth.middleware import verify_token
-from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
 import uvicorn
-
-load_dotenv()
 
 app = FastAPI()
 
